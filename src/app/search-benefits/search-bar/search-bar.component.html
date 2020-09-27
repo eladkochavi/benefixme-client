@@ -1,0 +1,47 @@
+<div class="container-fluid col-xl-12">
+    <div class="mx-auto">
+        <form>
+        <div class="form-row">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <form class="card card-sm">
+                            <div class="card-body row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <i class="fas fa-search h4 text-body"></i>
+                                </div>
+                                <div class="col search-box-item">
+                                    <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+                                </div>
+                                <div class="col-auto search-box-item">
+                                    <select class="search-box-item source-select btn dropdown-toggle" (change)="changeSelection($event)">
+                                        <option value="" disabled>Choose your Source</option>
+                                        <option *ngFor="let source of Sources">{{source}}</option>
+                                        </select>
+                                </div>
+                                <div class="col-auto search-box-item">
+                                    <button id="search-button" class="btn btn-lg btn-success" type="submit">Search</button>
+                                </div>
+                                <!--end of col-->
+                            </div>
+                        </form>
+                    </div>
+                    <!--end of col-->
+                </div>
+            </div>
+            <!-- <div class="col-12 col-md-7 mb-2">
+            <input type="text" class="search-box-item form-control form-control-lg rtl" placeholder="Insert your input here..">
+            </div> -->            
+            <!-- <div class="col-12 col-md-3">
+                <select class="search-box-item source-select btn dropdown-toggle" (change)="changeSelection($event)">
+                    <option value="" disabled>Choose your Source</option>
+                    <option *ngFor="let source of Sources">{{source}}</option>
+                 </select>
+            </div>
+            <div class="col-12 col-md-2">
+            <button type="submit" class="search-box-item btn btn-block btn-lg btn-primary">Find Benefits!</button>
+            </div>  -->
+        </div>
+        </form>
+    </div>    
+</div>

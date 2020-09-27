@@ -1,0 +1,14 @@
+<div class="search-result-box">
+    <div *ngFor="let benefit of benefits">
+        <app-benefit-result
+        [title]=benefit.title
+        [description]=benefit.description
+        [expirationDate]=benefit.expirationDate
+        [imageUrl]=benefit.imageUrl
+        [price]=benefit.price
+        [link]=benefit.link
+        [company]=benefit.company
+        [location]=benefit.location
+        [source]=benefit.benefitSource></app-benefit-result>
+    </div>
+</div>
