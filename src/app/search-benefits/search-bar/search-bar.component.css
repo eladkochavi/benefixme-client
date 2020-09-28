@@ -7,8 +7,7 @@
 
  .search-box-item {
      height: 50px;
-     margin-left: 1px;
-     margin-right: 1px;
+     
  }
 
  .dropdown-toggle {
@@ -30,3 +29,18 @@
 #search-button {
     background-color: slategray;
 }
+
+#search-contianer {
+    margin-top: 10%;
+}
+
+#search-bar-box {
+    background: rgba(76, 175, 80, 0.3) 
+}
+
+.special-card {
+    
+       background-color:rgba(0, 0, 0, 0.5);
+    }
+
+    

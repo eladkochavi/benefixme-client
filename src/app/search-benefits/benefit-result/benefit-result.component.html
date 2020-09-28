@@ -1,21 +1,25 @@
  <div class="well search-result">
     <div class="row">
-        <a [href]="link">
+        <a [href]="link" target="_blank">
             <div class="row">
             <div class="col-md-3">
                 <img class="img-responsive" [src]="imageUrl" alt="">
             </div>
-            <div class="col-md-7 title">
-                <h3>{{title}}</h3>
-                <p>{{description}}</p>
+            <div class="col-md-7 title fixed">
+                <h3 class="text">{{title}}</h3>
+                <p class="text">{{description}}</p>
             </div>
             <div class="col-md-2 text-center">
                 <div>
-                    <span class="price-span ">{{price}}</span> 
+                    <span class="text price-span">{{price}}</span> 
+                </div>
+                <br/>
+                <div>
+                    <span class="text expiration-span">{{expirationDate | date:'longDate'}}</span> 
                 </div>
                 <br/>
                 <div class="p-10">
-                    <span class="poweredby-span">{{getSource()}}</span>
+                    <span class="text poweredby-span">{{getSource()}}</span>
                 </div>
             </div>
         </div>

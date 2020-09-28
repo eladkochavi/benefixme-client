@@ -2,4 +2,11 @@
     background-color: gray;
     border-width: 1px;
     border-color: green;
+    overflow:scroll;
+    max-height: 1226px;
 }
+
+
+.scrollbar-light-blue {
+    scrollbar-color: #82B1FF #F5F5F5;
+  }

@@ -10,6 +10,9 @@ import { SearchBenefitsComponent } from './search-benefits.component';
 import { BenefitResultComponent } from './benefit-result/benefit-result.component';
 import { BenefitResultListComponent } from './benefit-result-list/benefit-result-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BenefitService } from '../services/benefits-service';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+
 @NgModule({
     declarations:[
         SearchBarComponent,
@@ -24,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
         RouterModule,
         SearchBenefitsRoutingModule,
         FormsModule,
-        HttpClientModule
-    ]
+        HttpClientModule,
+        AngularMultiSelectModule
+    ],
+    providers:[BenefitService]
 })
 export class SearchBenefitsModule {}

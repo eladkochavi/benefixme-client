@@ -2,14 +2,14 @@
     <div class="col-xl-12">
         <app-search-bar></app-search-bar>
     </div>
-    <div class="col-md-12 search-result" *ngIf="isLoading === false && isSearched === true">
-        <app-benefit-result-list></app-benefit-result-list>
-    </div>
-    <div class="col-md-12 search-result" *ngIf="isLoading === false && isSearched === false">
-        <app-defualt-search-results></app-defualt-search-results>
-    </div>
-    <div class="col-md-12 search-result" *ngIf="isLoading === true">
-        <app-spinner></app-spinner>
+    <div class="search-container">
+        <div class="col-md-12 search-result" *ngIf="isLoading === false && isSearched === true">
+            <app-benefit-result-list></app-benefit-result-list>
+        </div>
+        <div class="col-md-12 search-result" *ngIf="isLoading === true">
+            <app-spinner></app-spinner>
+        </div>
+        
     </div>
     
 </div>
